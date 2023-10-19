@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Seleccionar elemento del JSON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--
+
+        Visualizar datos
+        https://www.w3schools.com/js/js_json.asp
+        https://www.google.com/search?q=visualizar+json+en+html&rlz=1C1VDKB_enCO1044CO1044&source=lnms&sa=X&ved=2ahUKEwiawff5nKWAAxXINkQIHUbRC3MQ0pQJegQIAhAC&biw=1920&bih=937&dpr=1
+
+        material
+        https://materializecss.com/
+
+        conversior excel json
+        https://products.aspose.app/cells/es/conversion
+        
+        animacion 
+        https://www.youtube.com/watch?v=avzupi12bmY&t=717s
+        https://animate.style/
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div id="tabla">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre del Proyecto</th>
+                    <th>Fecha de Captura</th>
+                    <th>Tecnología</th>
+                    <th>Descripción</th>
+                    <th>Área</th>
+                    <th>Ruta de HTML</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.CODIGO }}</td>
+                    <td>{{ item.NOMBRE_PROYECTO }}</td>
+                    <td>{{ item.FECHA_CAPTURA }}</td>
+                    <td>{{ item.TECNOLOGIA }}</td>
+                    <td>{{ item.DESCRIPCION }}</td>
+                    <td>{{ item.AREA }}</td>
+                    <td>{{ item.RUTA_HTML }}</td>
+                    <td><a href="#" class="abrir-explorador" data-index="{{ item.index }}">Abrir Explorador</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <!-- Contenedor del mapa -->
+        <div id="mapa" class="col s12 m8 l6">
+            <!-- Mapa va aquí -->
+        </div>
+        <div class="col s12 m4 l6">
+            <h3 class="center-align blue-text text-darken-2">Informacion general</h3>
+    
+            <div id="detalle_datos" class="card">
+                <div class="card-content">
+                    <span class="card-title flow-text">Datos del proyecto seleccionado</span>
+                    <p>Codigo: <span id="codigo"></span></p>
+                    <p>Nombre del proyecto: <span id="nombre"></span></p>
+                    <p>Fecha: <span id="fecha"></span></p>
+                    <p>Tecnologia usada: <span id="tecnologia"></span></p>
+                    <p>Latitud: <span id="latitud"></span></p>
+                    <p>Longitud: <span id="longitud"></span></p>
+                    <p>Descripcion: <span id="descripcion"></span> </p>
+                    <p>Area: <span id="area"></span>[Km <sup>2</sup>]</p>
+                </div>
+                <div class="card-action">
+                    <p>Archivos disponibles:</p>
+                    <a href=""><span id="archivoLaz"></span></a>
+                    <a href=""><span id="archivoMosaico"></span></a>
+                </div>
+            </div>
+            <div id="div-select" class="input-field col s12">
+                <select id="citySelect">
+                    <option disabled selected>Selecciona una ciudad:</option>
+                </select>
+            </div>
+        </div>
+    </div> 
+    <script src="{{ url_for('static',filename='open.js') }}"> </script>
+</body>
+
+</html>

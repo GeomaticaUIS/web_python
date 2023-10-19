@@ -1,0 +1,53 @@
+[
+ {
+  "CODIGO": "UAV_E_AMB_001",
+  "NOMBRE_PROYECTO": "Mesón Búcaros",
+  "FECHA_CAPTURA": "2 de febrero de 2014",
+  "TECNOLOGIA": "UAV",
+  "Latitud": 7.12728,
+  "Longitud": -73.119201,
+  "DESCRIPCION": "Ubicado en la ciudad de bucaramanga, sector meson de los búcaros",
+  "AREA": 0.4,
+  "RUTA_CARPETA": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\1. MesonBucaros-02Feb14",
+  "RUTA_ORTOMOSAICO": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\1. MesonBucaros-02Feb14\\3. Posproceso\\MesonBucaros_3\\meson_bucaros\\3_dsm_ortho\\2_mosaic",
+  "NOMBRE_ORTOMOSAICO": "meson_bucaros_mosaic_group1.tif",
+  "RUTA_CARPETA_NUBE_PUNTOS": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\1. MesonBucaros-02Feb14\\3. Posproceso\\MesonBucaros_3\\meson_bucaros\\2_densification\\2_filtered",
+  "NOMBRE_NUBE_PUNTOS": "meson_bucaros_filtered_point_cloud.laz",
+  "RUTA_HTML": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\1. MesonBucaros-02Feb14\\3. Posproceso\\MesonBucaros_3\\meson_bucaros\\3_dsm_ortho\\2_mosaic\\google_tiles",
+  "ARCHIVO_HTML": "meson_bucaros_mosaic.kml"   
+ },
+ {
+  "CODIGO": "UAV_E_AMB_002",
+  "NOMBRE_PROYECTO": "Barrio 12 de Octubre",
+  "FECHA_CAPTURA": "15 de marzo de 2014",
+  "TECNOLOGIA": "UAV",
+  "Latitud": 7.119403,
+  "Longitud": -73.137262,
+  "DESCRIPCION": "Ubicado en la ciudad de bucaramanga, sector barrio 12 de octubre",
+  "AREA": 0.31,
+  "RUTA_CARPETA": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\2. Barrio 12 de Octubre-15Marz14",
+  "RUTA_ORTOMOSAICO": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\2. Barrio 12 de Octubre-15Marz14\\girardot_2\\3_dsm_ortho\\2_mosaic",
+  "NOMBRE_ORTOMOSAICO": "girardot_2_mosaic_rgb.tif",
+  "RUTA_CARPETA_NUBE_PUNTOS": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\2. Barrio 12 de Octubre-15Marz14\\girardot_2\\2_densification\\point_cloud",
+  "NOMBRE_NUBE_PUNTOS": "girardot_2_RGB_densified_point_cloud.las",
+  "RUTA_HTML": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\2. Barrio 12 de Octubre-15Marz14\\girardot_2\\3_dsm_ortho\\2_mosaic\\google_tiles",
+  "ARCHIVO_HTML": "girardot_2_mosaic.kml" 
+ },
+ {
+  "CODIGO": "UAV_E_AMB_003",
+  "NOMBRE_PROYECTO": "UIS",
+  "FECHA_CAPTURA": "26 de marzo de 2014",
+  "TECNOLOGIA": "UAV",
+  "Latitud": 7.140539,
+  "Longitud": -73.119707,
+  "DESCRIPCION": "Ubicado en la ciudad de bucaramanga, campus central de la Universidad Industrial de Santander",
+  "AREA": 1.55,
+  "RUTA_CARPETA": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\3. UIS-26Marz14",
+  "RUTA_ORTOMOSAICO": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\3. UIS-26Marz14\\3. Posproceso\\mosaic",
+  "NOMBRE_ORTOMOSAICO": "uis_mosaic_rgb.tif",
+  "RUTA_CARPETA_NUBE_PUNTOS": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\3. UIS-26Marz14\\3. Posproceso\\UIS-procesamiento 2015\\uis_proces_2015\\2_densification\\point_cloud",
+  "NOMBRE_NUBE_PUNTOS": "uis_proces_2015_densified_point_cloud.las",
+  "RUTA_HTML": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\3. UIS-26Marz14\\3. Posproceso\\google_tiles",
+  "ARCHIVO_HTML": "uis_mosaic.kml" 
+ } 
+]

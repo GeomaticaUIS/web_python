@@ -1,0 +1,9 @@
+#mapa{
+    /* height: 85vh; */
+    height: 650px;
+}
+
+
+select {
+    display:inline; 
+}
