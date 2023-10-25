@@ -35,7 +35,7 @@ function abrirExplorador(index) {
  // Datos de tu archivo JSON (asegúrate de cargarlos previamente)
 
  const mapa = document.getElementById('mapa');
- var map = L.map(mapa).setView([7.12728, -73.11920], 13);
+ var map = L.map(mapa).setView([7.12728, -73.11920], 11);
  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map); 
@@ -112,6 +112,7 @@ const getData = () => {
         }
     };
 };
+console.log(allMarkers)
 
 getData();
 

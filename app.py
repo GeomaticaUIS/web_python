@@ -1,13 +1,14 @@
 from flask import Flask, render_template, send_from_directory,request, redirect, url_for,send_file
 import os
 import subprocess
+import json
+
 
 app = Flask(__name__,
         template_folder='templates')
 
 app.static_folder = 'static'
 
-import json
 
 
 # Lee los datos desde el archivo JSON
