@@ -77,13 +77,16 @@ const getData = () => {
 
                 marker.on("popupopen", function () {
                     document.getElementById("codigo").textContent = element.CODIGO;
+                    document.getElementById("municipio").textContent = element.MUNICIPIO;
                     document.getElementById("nombre").textContent = element.NOMBRE_PROYECTO;
                     document.getElementById("fecha").textContent = element.FECHA_CAPTURA;
                     document.getElementById("tecnologia").textContent = element.TECNOLOGIA;
                     document.getElementById("latitud").textContent = element.Latitud + "°";
                     document.getElementById("longitud").textContent = element.Longitud + "°";
                     document.getElementById("descripcion").textContent = element.DESCRIPCION;
-                    document.getElementById("area").textContent = element.AREA;
+                    document.getElementById("area").textContent = element.AREA_HAS;
+                    document.getElementById("resolucion").textContent = element.RESOLUCION;
+
 
                     const servidor = element.RUTA_CARPETA_NUBE_PUNTOS; // Esta es la ruta de la carpeta en tu servidor
                     const archivo = element.NOMBRE_NUBE_PUNTOS; //"\\\\servidor\\carpetacompartida";
