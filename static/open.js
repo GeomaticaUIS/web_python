@@ -68,7 +68,7 @@ const getData = () => {
 
                 var option = document.createElement("option");
                 option.value = element.CODIGO;
-                option.text = element.NOMBRE_PROYECTO; 
+                option.text = element.MUNICIPIO; 
                 citySelect.appendChild(option);
 
                 var marker = L.marker([element.Latitud, element.Longitud]).addTo(map);

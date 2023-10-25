@@ -385,7 +385,7 @@
   "RUTA_CARPETA_NUBE_PUNTOS": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\20. SedePradosol-27Jun15\\pradosol\\2_densification\\point_cloud",
   "NOMBRE_NUBE_PUNTOS": "pradosol_densified_point_cloud.las",
   "RUTA_HTML": "\\\\10.1.90.10\\sensor\\UAV\\2. UAV eBee\\1. Area Metropolitana\\20. SedePradosol-27Jun15\\pradosol\\3_dsm_ortho\\2_mosaic\\google_tiles",
-  "ARCHIVO_HTML": "pradosol_mosaic",
+  "ARCHIVO_HTML": "pradosol_mosaic.html",
   "KML": "pradosol_mosaic"
  },
  {
